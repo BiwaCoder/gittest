@@ -1,0 +1,32 @@
+# mac
+.DS_Store
+
+# emacs
+*~
+\#~
+
+# unity
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+[Ll]ibrary
+[Tt]emp
+[Tt]argets
+
+# app
+SuperSocket.ClientEngine.Proxy.dll.s
+*.ipa
+*.apk
+yukigassen/.typemap/
+Build/
+
+#photon
+#yukigassen/Assets/Photon\ Unity\ Networking/Resources/PhotonServerSettings.asset
+#yukigassen/Assets/Photon\ Unity\ Networking/Resources/PhotonServerSettings.asset.meta
+
+#self
