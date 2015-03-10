@@ -7,7 +7,7 @@ public class BulletSize : MonoBehaviour {
 	private int stateCounter;
 
 	public Vector3 endPosition;
-	
+
 	void Start () {
 		particleSystem = GetComponent<ParticleSystem>();
 		particleSystem.startSize = 1;
@@ -16,7 +16,7 @@ public class BulletSize : MonoBehaviour {
 		particleSystem.renderer.sortingOrder = 2;
 		stateCounter = 0;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		totalTime += Time.deltaTime;
@@ -24,7 +24,7 @@ public class BulletSize : MonoBehaviour {
 			particleSystem.startSize = 5;
 		}
 		else if (0.5 <= totalTime && totalTime <= 3.5) {
-			float speed = 5.0f;
+			float speed = 15.0f;
 			float step = Time.deltaTime * speed;
 			transform.position = Vector3.MoveTowards(transform.position,endPosition, step);
 			//transform.Translate (10*Time.deltaTime, 0, 0,Space.World);
